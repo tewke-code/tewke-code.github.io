@@ -43434,7 +43434,7 @@ F.CF.prototype={
 H:function(a,b){var s=null,r=t.ua
 return M.fA(s,T.a_s(H.c([new Q.nV(H.c([new B.e8("Good Morning",s),new B.e8("Good Night",s)],r),s),new Q.nV(H.c([new B.e8(s,s),new B.e8("Away",s)],r),s)],t.fQ),C.l5),s,s,s,s,C.te,s,s)}}
 L.Ab.prototype={
-H:function(a,b){return T.Xe(L.Y9("Temperature screen",null),null,null)}}
+H:function(a,b){return T.Xe(L.Y9("Thermostat screen",null),null,null)}}
 Z.w9.prototype={
 H:function(a,b){var s=null
 return M.fA(s,T.a_s(H.c([M.fA(s,new R.oc(A.ka(s,s,s,s,s,s,s,s,s,s,s,24,s,s,s,s,!0,s,s,s,s,s,s),s),s,s,s,s,s,s,s)],t.fQ),C.l5),C.vq,s,s,720,s,s,1/0)}}
