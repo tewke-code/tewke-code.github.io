@@ -4,9 +4,9 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "manifest.json": "7e35a68ca231d46db2bb9b491221182b",
-"main.dart.js": "95ce7a9395fe06bb80c85edeb2055b64",
-"index.html": "1af41eebacbcbc4bcb799b8ea9074618",
-"/": "1af41eebacbcbc4bcb799b8ea9074618",
+"main.dart.js": "0f319629c3385b9b34352edc64a6f38d",
+"index.html": "0376894b09baa32ada70d9b14a9805fb",
+"/": "0376894b09baa32ada70d9b14a9805fb",
 "assets/assets/icons/music/speaker_devices.svg": "69625faf508d3db05bc93a8a6530e84b",
 "assets/assets/icons/music/music-devices/tewke_switch_device.svg": "8cdb22062f8d12c9146cb9c32a617da4",
 "assets/assets/icons/music/music-devices/laptop_device.svg": "964edd6334b29d304e6b2df1a8d0aa18",
@@ -15,6 +15,7 @@ const RESOURCES = {
 "assets/assets/icons/music/music-services/apple_logo.svg": "ed192078af1c3051c14c386cb91cbb91",
 "assets/assets/icons/music/music-services/tune_in.svg": "943e3a149189e6b1e2ab45dbd7143e03",
 "assets/assets/icons/music/music-services/amazon_music.svg": "2ddcb5aa79680fae0c41e63ed575f650",
+"assets/assets/icons/music/music-services/back_arrow.svg": "07f7d767d78bc466039265dddf7638dc",
 "assets/assets/icons/music/music-services/radio_play_button.svg": "c5ed2198afaa653033a9a843dca16e9b",
 "assets/assets/icons/music/heart_favourite.svg": "37bcda30270cf0a8dc849a8b603d4dcf",
 "assets/assets/icons/music/heart_favourite_filled.svg": "fecf067e8e12533340d079f31e348279",
@@ -53,8 +54,8 @@ const RESOURCES = {
 "assets/assets/fonts/helveticaneue/HelveticaNeue_Light.ttf": "0facaae97183b8fede52099930aefd8d",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/FontManifest.json": "6eee6dba1725d3766c2cbf13abbda308",
-"assets/NOTICES": "c6a06296908df66cdbfe25f4fdb29a8c",
-"assets/AssetManifest.json": "2b2e4cb3f8e5221aa6d8603cb5da6e9c",
+"assets/NOTICES": "849e3d85b32903d55af67b84a7b3e21d",
+"assets/AssetManifest.json": "b5f745d34f46212af4236ced77f150c8",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
@@ -203,7 +204,7 @@ async function downloadOffline() {
     }
     currentContent[key] = true;
   }
-  for (var resourceKey in Object.keys(RESOURCES)) {
+  for (var resourceKey of Object.keys(RESOURCES)) {
     if (!currentContent[resourceKey]) {
       resources.push(resourceKey);
     }
